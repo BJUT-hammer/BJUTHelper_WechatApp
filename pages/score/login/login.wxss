@@ -57,3 +57,7 @@
 .divLine{
  margin: 40rpx 0;
 }
+
+.text-align-right{
+  text-align: right;
+}

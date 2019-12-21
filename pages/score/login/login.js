@@ -33,11 +33,27 @@ let sendRequest = function(
 }
 
 var app = getApp()
+
+const genYear = (year) => String(year) + "-" + String(year + 1)
+const now = new Date();
+let thisYear = now.getFullYear()
+if (now.getMonth < 9) {
+  thisYear -= 1
+}
+const years = ['请选择学年']
+years.push(
+  genYear(thisYear),
+  genYear(thisYear - 1),
+  genYear(thisYear - 2),
+  genYear(thisYear - 3),
+  genYear(thisYear - 4)
+)
+
 Page(Object.assign({}, Zan.Switch,{
   data: {
     user:"",
     pwd:"",
-    year: ['请选择学年', '2018-2019', '2017-2018', '2016-2017', '2015-2016', '2014-2015'],
+    year: years,
     yearIndex: 0,
     term: ['请选择学期', '1', '2', '3'],
     termIndex: 0,
@@ -162,6 +178,16 @@ Page(Object.assign({}, Zan.Switch,{
   },
 
   startRequireScore(e) {
+
+    // 机房维护提示
+    // wx.showToast({
+    //   title: '抱歉，学校机房维护，暂时暂停查分服务。',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+    // return;
+    // 机房维护提示end
+
     if (!(
       this.data.user 
       && this.data.pwd

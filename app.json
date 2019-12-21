@@ -1,15 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/score/login/login",
     "pages/score/result/result",
     "pages/score/share/share"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
     "navigationBarTitleText": "野生工大助手",
-    "navigationBarTextStyle":"black",
-    "backgroundTextStyle":"dark",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
     "backgroundColor": "#f9f9f9"
   },
-  "cloud": true
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
 }

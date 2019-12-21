@@ -13,11 +13,11 @@
     <view class="zan-form">
       <view class="zan-cell zan-form__item">
         <text class="zan-form__title">查询学号</text>
-        <input class="zan-form__input zan-cell__bd" placeholder="请输入您的学号" type="text" maxlength="20" bindchange="onUserChange" value="{{ user }}" />
+        <input class="zan-form__input zan-cell__bd text-align-right" placeholder="请输入您的学号" type="text" maxlength="20" bindchange="onUserChange" value="{{ user }}" />
       </view>
       <view class="zan-cell zan-form__item">
         <text class="zan-form__title">教务密码</text>
-        <input class="zan-form__input zan-cell__bd" password="true" placeholder="请输入您教务密码(gdjwgl.bjut.edu.cn)" bindchange="onPwdChange" value="{{ pwd }}" />
+        <input class="zan-form__input zan-cell__bd text-align-right" password="true" placeholder="请输入您教务密码(gdjwgl.bjut.edu.cn)" bindchange="onPwdChange" value="{{ pwd }}" />
       </view>
     </view>
   </view>
@@ -99,7 +99,7 @@
         </view>
         <text>
           <text>[前端组] 马文瑞 高正岳\n</text>
-          <text>[后端组] 王雨峰 陈仕玺 郭都豪 马文瑞\n</text>
+          <text>[后端组] 王雨峰 陈仕玺 王晓曦 郭都豪 马文瑞\n</text>
         </text>
     </view>
   </view>
